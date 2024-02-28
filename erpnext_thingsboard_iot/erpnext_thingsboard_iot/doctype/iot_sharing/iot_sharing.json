@@ -1,0 +1,51 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-02-07 16:09:35.952403",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sharing_project",
+  "sharing_customer"
+ ],
+ "fields": [
+  {
+   "fieldname": "sharing_project",
+   "fieldtype": "Link",
+   "label": "D\u1ef1 \u00e1n chia s\u1ebd",
+   "options": "iot_project"
+  },
+  {
+   "fieldname": "sharing_customer",
+   "fieldtype": "Link",
+   "label": "Chia s\u1ebd cho kh\u00e1ch h\u00e0ng",
+   "options": "iot_customer_user"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-07 16:12:22.650631",
+ "modified_by": "Administrator",
+ "module": "Thingsboard Intergration",
+ "name": "iot_sharing",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,205 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:device_id_thingsboard",
+ "creation": "2023-02-07 16:19:52.359328",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "device_id_thingsboard",
+  "device_name",
+  "id_thingsboard",
+  "device_profile_id",
+  "access_token_thingsboard",
+  "column_break_5",
+  "zone_id",
+  "firmware_id",
+  "software_id",
+  "device_type",
+  "zone_name",
+  "device_image",
+  "section_break_10",
+  "description",
+  "customer_id",
+  "is_gateway",
+  "add_credentials",
+  "credentials_section",
+  "credentials_type",
+  "access_token",
+  "x509_certificate",
+  "mqtt_client_id",
+  "mqtt_user_name",
+  "mqtt_password",
+  "device_label"
+ ],
+ "fields": [
+  {
+   "fieldname": "id_thingsboard",
+   "fieldtype": "Data",
+   "label": "M\u00e3 thi\u1ebft b\u1ecb thingsboard"
+  },
+  {
+   "fieldname": "device_name",
+   "fieldtype": "Data",
+   "label": "T\u00ean thi\u1ebft b\u1ecb"
+  },
+  {
+   "fieldname": "device_profile_id",
+   "fieldtype": "Link",
+   "label": "Ki\u1ec3u lo\u1ea1i thi\u1ebft b\u1ecb",
+   "options": "iot_device_profile"
+  },
+  {
+   "fieldname": "zone_id",
+   "fieldtype": "Link",
+   "label": "M\u00e3 khu v\u1ef1c",
+   "options": "iot_zone"
+  },
+  {
+   "fetch_from": "device_profile_id.firmware_id",
+   "fieldname": "firmware_id",
+   "fieldtype": "Read Only",
+   "label": "M\u00e3 firmware"
+  },
+  {
+   "fetch_from": "device_profile_id.software_id",
+   "fieldname": "software_id",
+   "fieldtype": "Read Only",
+   "label": "M\u00e3 ph\u1ea7n m\u1ec1m"
+  },
+  {
+   "fieldname": "device_image",
+   "fieldtype": "Attach Image",
+   "label": "H\u00ecnh \u1ea3nh"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "M\u00f4 t\u1ea3"
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Link",
+   "label": "Kh\u00e1ch h\u00e0ng",
+   "options": "iot_customer"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_gateway",
+   "fieldtype": "Check",
+   "label": "Is Gateway"
+  },
+  {
+   "default": "0",
+   "fieldname": "add_credentials",
+   "fieldtype": "Check",
+   "label": "Add credentials"
+  },
+  {
+   "fieldname": "credentials_type",
+   "fieldtype": "Select",
+   "label": "Credentials type",
+   "options": "Access token\nX.509\nMQTT Basic"
+  },
+  {
+   "depends_on": "eval:doc.add_credentials == 1",
+   "fieldname": "credentials_section",
+   "fieldtype": "Section Break",
+   "label": "Credentials"
+  },
+  {
+   "depends_on": "eval:doc.credentials_type == \"Access token\"",
+   "fieldname": "access_token",
+   "fieldtype": "Data",
+   "label": "Access token"
+  },
+  {
+   "depends_on": "eval:doc.credentials_type == \"X.509\"",
+   "fieldname": "x509_certificate",
+   "fieldtype": "Data",
+   "label": "Certificate in PEM format"
+  },
+  {
+   "depends_on": "eval:doc.credentials_type == \"MQTT Basic\"",
+   "fieldname": "mqtt_client_id",
+   "fieldtype": "Data",
+   "label": "Client ID"
+  },
+  {
+   "depends_on": "eval:doc.credentials_type == \"MQTT Basic\"",
+   "fieldname": "mqtt_user_name",
+   "fieldtype": "Data",
+   "label": "User Name"
+  },
+  {
+   "depends_on": "eval:doc.credentials_type == \"MQTT Basic\"",
+   "fieldname": "mqtt_password",
+   "fieldtype": "Data",
+   "label": "Password"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "device_id_thingsboard",
+   "fieldtype": "Data",
+   "label": "M\u00e3 thi\u1ebft b\u1ecb",
+   "unique": 1
+  },
+  {
+   "fieldname": "access_token_thingsboard",
+   "fieldtype": "Data",
+   "label": "access_token_thingsboard"
+  },
+  {
+   "fetch_from": "zone_id.zone_name",
+   "fieldname": "zone_name",
+   "fieldtype": "Read Only",
+   "label": "zone_name"
+  },
+  {
+   "fieldname": "device_type",
+   "fieldtype": "Data",
+   "label": "Device type"
+  },
+  {
+   "fieldname": "device_label",
+   "fieldtype": "Data",
+   "label": "Device label"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-21 20:42:34.632156",
+ "modified_by": "Administrator",
+ "module": "Thingsboard Intergration",
+ "name": "iot_device",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "device_name"
+}

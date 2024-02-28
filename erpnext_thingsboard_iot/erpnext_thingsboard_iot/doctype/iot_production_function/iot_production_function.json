@@ -1,0 +1,164 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2023-04-18 15:17:39.910910",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type",
+  "function_name",
+  "identifier",
+  "data_type",
+  "icon_url",
+  "data_on_text",
+  "data_off_text",
+  "enum_value",
+  "unit",
+  "data_permission",
+  "description",
+  "device_profile_id",
+  "device_group_function_id",
+  "data_measure_max",
+  "data_measure_min",
+  "data_eligible_max",
+  "data_eligible_min",
+  "index_sort",
+  "chart_type",
+  "round_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "label": "type"
+  },
+  {
+   "fieldname": "function_name",
+   "fieldtype": "Data",
+   "label": "function_name"
+  },
+  {
+   "fieldname": "identifier",
+   "fieldtype": "Data",
+   "label": "identifier"
+  },
+  {
+   "fieldname": "data_type",
+   "fieldtype": "Select",
+   "label": "data_type",
+   "options": "Bool\nValue\nEnum\nRaw\nString\nGroup Break\nTab Break"
+  },
+  {
+   "fieldname": "icon_url",
+   "fieldtype": "Data",
+   "label": "icon_url"
+  },
+  {
+   "fieldname": "data_on_text",
+   "fieldtype": "Data",
+   "label": "data_on_text"
+  },
+  {
+   "fieldname": "data_off_text",
+   "fieldtype": "Data",
+   "label": "data_off_text"
+  },
+  {
+   "fieldname": "enum_value",
+   "fieldtype": "Data",
+   "label": "enum_value"
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Data",
+   "label": "unit"
+  },
+  {
+   "fieldname": "data_permission",
+   "fieldtype": "Select",
+   "label": "data_permission",
+   "options": "r\nrw\nw"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "description"
+  },
+  {
+   "fieldname": "device_profile_id",
+   "fieldtype": "Link",
+   "label": "device_profile_id",
+   "options": "iot_device_profile"
+  },
+  {
+   "fieldname": "device_group_function_id",
+   "fieldtype": "Data",
+   "label": "device_group_function_id"
+  },
+  {
+   "fieldname": "data_measure_max",
+   "fieldtype": "Data",
+   "label": "data_measure_max"
+  },
+  {
+   "fieldname": "data_measure_min",
+   "fieldtype": "Data",
+   "label": "data_measure_min"
+  },
+  {
+   "fieldname": "data_eligible_max",
+   "fieldtype": "Data",
+   "label": "data_eligible_max"
+  },
+  {
+   "fieldname": "data_eligible_min",
+   "fieldtype": "Data",
+   "label": "data_eligible_min"
+  },
+  {
+   "fieldname": "index_sort",
+   "fieldtype": "Data",
+   "label": "index_sort"
+  },
+  {
+   "fieldname": "chart_type",
+   "fieldtype": "Select",
+   "label": "chart_type",
+   "options": "\nLine\nText\nText_Line\nGauge"
+  },
+  {
+   "fieldname": "round_type",
+   "fieldtype": "Select",
+   "label": "round_type",
+   "options": "\nRaw\nRound\nFloat_2\nFloat_3"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-19 20:04:10.194297",
+ "modified_by": "Administrator",
+ "module": "Thingsboard Intergration",
+ "name": "iot_production_function",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "function_name"
+}

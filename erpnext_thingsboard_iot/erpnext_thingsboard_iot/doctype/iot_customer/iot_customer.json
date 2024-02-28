@@ -1,0 +1,111 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:id",
+ "creation": "2023-02-07 15:52:39.440577",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "id",
+  "full_name",
+  "email",
+  "address",
+  "phone",
+  "date_join",
+  "descrition",
+  "country",
+  "city",
+  "province",
+  "postal_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "M\u00e3 kh\u00e1ch h\u00e0ng",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "T\u00ean kh\u00e1ch h\u00e0ng"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "email"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "\u0110\u1ecba ch\u1ec9"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "S\u1ed1 \u0111i\u1ec7n tho\u1ea1i"
+  },
+  {
+   "fieldname": "descrition",
+   "fieldtype": "Long Text",
+   "label": "M\u00f4 t\u1ea3"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "province",
+   "fieldtype": "Data",
+   "label": "State/ Province"
+  },
+  {
+   "fieldname": "postal_code",
+   "fieldtype": "Data",
+   "label": "Zip/ Postal Code"
+  },
+  {
+   "fieldname": "date_join",
+   "fieldtype": "Date",
+   "label": "Ng\u00e0y tham gia"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-21 20:57:13.487683",
+ "modified_by": "Administrator",
+ "module": "Thingsboard Intergration",
+ "name": "iot_customer",
+ "name_case": "Title Case",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "full_name"
+}

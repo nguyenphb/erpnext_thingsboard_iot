@@ -1,0 +1,240 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:profile_id",
+ "creation": "2023-02-07 16:25:56.983606",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "profile_id",
+  "profile_name",
+  "profile_id_thingsboard",
+  "profile_image",
+  "description",
+  "rule_chain",
+  "firmware_id",
+  "software_id",
+  "profile_type",
+  "provision_type",
+  "is_default",
+  "profile_data",
+  "mobile_dashboard",
+  "queue",
+  "transport_type",
+  "mqtt_section",
+  "mqtt_device_topic_filters",
+  "telemetry_topic_filter",
+  "attrubutes_topic_filter",
+  "send_puback",
+  "mqtt_device_payload",
+  "coap_section",
+  "coap_device_type",
+  "coap_device_payload",
+  "power_saving_mode",
+  "lwm2m_section",
+  "snmp_section",
+  "section_break_22",
+  "alarm_rule",
+  "provision_strategy"
+ ],
+ "fields": [
+  {
+   "fieldname": "profile_name",
+   "fieldtype": "Data",
+   "label": "T\u00ean ki\u1ec3u thi\u1ebft b\u1ecb",
+   "unique": 1
+  },
+  {
+   "fieldname": "profile_id_thingsboard",
+   "fieldtype": "Data",
+   "label": "M\u00e3 profile thingsboard"
+  },
+  {
+   "fieldname": "profile_image",
+   "fieldtype": "Attach Image",
+   "label": "H\u00ecnh \u1ea3nh"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "M\u00f4 t\u1ea3"
+  },
+  {
+   "fieldname": "rule_chain",
+   "fieldtype": "Data",
+   "label": "Rule chain"
+  },
+  {
+   "fieldname": "mobile_dashboard",
+   "fieldtype": "Data",
+   "label": "Mobile dashboard"
+  },
+  {
+   "fieldname": "queue",
+   "fieldtype": "Data",
+   "label": "Queue"
+  },
+  {
+   "fieldname": "transport_type",
+   "fieldtype": "Select",
+   "label": "Transport type",
+   "options": "DEFAULT\nMQTT\nCoAP\nLWM2M\nSNMP"
+  },
+  {
+   "fieldname": "alarm_rule",
+   "fieldtype": "Data",
+   "label": "Alarm rule"
+  },
+  {
+   "fieldname": "provision_strategy",
+   "fieldtype": "Select",
+   "label": "Provision strategy",
+   "options": "Disabled\nAllow to create new devices\nCheck for pre-provisioned devices"
+  },
+  {
+   "fieldname": "mqtt_device_topic_filters",
+   "fieldtype": "Heading",
+   "label": "MQTT device topic filters"
+  },
+  {
+   "default": "v1/devices/me/telemetry",
+   "fieldname": "telemetry_topic_filter",
+   "fieldtype": "Data",
+   "label": "Telemetry topic filter"
+  },
+  {
+   "default": "v1/devices/me/attributes",
+   "description": "Single [+] and multi-level [#] wildcards supported.\n[+] is suitable for any topic filter level. Ex.: v1/devices/+/telemetry or +/devices/+/attributes.\n[#] can replace the topic filter itself and must be the last symbol of the topic. Ex.: # or v1/devices/me/#.",
+   "fieldname": "attrubutes_topic_filter",
+   "fieldtype": "Data",
+   "label": "Attrubutes topic filter"
+  },
+  {
+   "depends_on": "eval:doc.transport_type == \"MQTT\"",
+   "fieldname": "mqtt_section",
+   "fieldtype": "Section Break",
+   "label": "MQTT transport settings"
+  },
+  {
+   "fieldname": "mqtt_device_payload",
+   "fieldtype": "Select",
+   "label": "MQTT device payload",
+   "options": "JSON\nProtobuf"
+  },
+  {
+   "depends_on": "eval:doc.transport_type == \"CoAP\"",
+   "fieldname": "coap_section",
+   "fieldtype": "Section Break",
+   "label": "CoAP transport settings"
+  },
+  {
+   "fieldname": "coap_device_type",
+   "fieldtype": "Select",
+   "label": "CoAP device type",
+   "options": "Default\nEfento NB-IoT"
+  },
+  {
+   "fieldname": "coap_device_payload",
+   "fieldtype": "Select",
+   "label": "CoAP device payload",
+   "options": "JSON\nProtobuf"
+  },
+  {
+   "fieldname": "power_saving_mode",
+   "fieldtype": "Select",
+   "label": "Power Saving Mode",
+   "options": "Power Saving Mode (PSM)\nDiscontinuous Reception (DRX)\nExtended Discontinuous Reception (eDRX)"
+  },
+  {
+   "depends_on": "eval:doc.transport_type == \"LWM2M\"",
+   "fieldname": "lwm2m_section",
+   "fieldtype": "Section Break",
+   "label": "LWM2M transport type"
+  },
+  {
+   "depends_on": "eval:doc.transport_type == \"SNMP\"",
+   "fieldname": "snmp_section",
+   "fieldtype": "Section Break",
+   "label": "SNMP transport configuration"
+  },
+  {
+   "fieldname": "section_break_22",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "firmware_id",
+   "fieldtype": "Data",
+   "label": "M\u00e3 firmware"
+  },
+  {
+   "fieldname": "software_id",
+   "fieldtype": "Data",
+   "label": "M\u00e3 ph\u1ea7n m\u1ec1m"
+  },
+  {
+   "fieldname": "profile_type",
+   "fieldtype": "Data",
+   "label": "Profile type"
+  },
+  {
+   "fieldname": "provision_type",
+   "fieldtype": "Data",
+   "label": "Provision type"
+  },
+  {
+   "fieldname": "is_default",
+   "fieldtype": "Data",
+   "label": "Is default"
+  },
+  {
+   "fieldname": "profile_data",
+   "fieldtype": "JSON",
+   "label": "Profile data"
+  },
+  {
+   "default": "0",
+   "description": "By default, the platform will close the MQTT session on message validation failure. When enabled, the platform will send publish acknowledgment instead of closing the session.",
+   "fieldname": "send_puback",
+   "fieldtype": "Check",
+   "label": "Send PUBACK on PUBLISH message validation failure"
+  },
+  {
+   "fieldname": "profile_id",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "M\u00e3 ki\u1ec3u thi\u1ebft b\u1ecb",
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-21 21:06:27.200927",
+ "modified_by": "Administrator",
+ "module": "Thingsboard Intergration",
+ "name": "iot_device_profile",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "profile_name"
+}
