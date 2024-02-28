@@ -1,117 +1,117 @@
 {
- "_comments": "[{\"comment\": \"Action Failed<br><br><pre><code>Traceback (most recent call last):\\n  File \\\"apps/frappe/frappe/mod...\", \"by\": \"Administrator\", \"name\": \"03fb845601\"}, {\"comment\": \"Action Failed<br><br><pre><code>Traceback (most recent call last):\\n  File \\\"apps/frappe/frappe/mod...\", \"by\": \"Administrator\", \"name\": \"b9373f4447\"}]",
- "actions": [],
- "allow_rename": 1,
- "autoname": "format:{user_id}-{iot_customer}",
- "creation": "2023-04-11 23:24:51.246991",
- "default_view": "List",
- "doctype": "DocType",
- "editable_grid": 1,
- "engine": "InnoDB",
- "field_order": [
-  "user_avatar",
-  "email",
-  "full_name",
-  "phone_number",
-  "id_number",
-  "address",
-  "date_join",
-  "date_active",
-  "date_warranty",
-  "user_id",
-  "user_location",
-  "iot_customer"
- ],
- "fields": [
-  {
-   "fieldname": "user_avatar",
-   "fieldtype": "Attach Image",
-   "label": "avatar"
-  },
-  {
-   "fieldname": "email",
-   "fieldtype": "Data",
-   "label": "email"
-  },
-  {
-   "fieldname": "full_name",
-   "fieldtype": "Data",
-   "label": "H\u1ecd v\u00e0 t\u00ean"
-  },
-  {
-   "fieldname": "phone_number",
-   "fieldtype": "Data",
-   "label": "S\u1ed1 \u0111i\u1ec7n tho\u1ea1i"
-  },
-  {
-   "fieldname": "id_number",
-   "fieldtype": "Data",
-   "label": "S\u1ed1 cccd/cmnd"
-  },
-  {
-   "fieldname": "address",
-   "fieldtype": "Data",
-   "label": "\u0110\u1ecba ch\u1ec9"
-  },
-  {
-   "fieldname": "date_join",
-   "fieldtype": "Date",
-   "label": "Ng\u00e0y tham gia"
-  },
-  {
-   "fieldname": "date_active",
-   "fieldtype": "Date",
-   "label": "Ng\u00e0y active"
-  },
-  {
-   "fieldname": "date_warranty",
-   "fieldtype": "Date",
-   "label": "Th\u1eddi h\u1ea1n b\u1ea3o h\u00e0nh"
-  },
-  {
-   "fieldname": "user_id",
-   "fieldtype": "Link",
-   "label": "user_id",
-   "options": "User"
-  },
-  {
-   "fieldname": "user_location",
-   "fieldtype": "Geolocation",
-   "label": "V\u1ecb tr\u00ed"
-  },
-  {
-   "fieldname": "iot_customer",
-   "fieldtype": "Link",
-   "label": "Kh\u00e1ch h\u00e0ng c\u1ee7a",
-   "options": "iot_customer"
-  }
- ],
- "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2023-04-15 17:04:07.505507",
- "modified_by": "Administrator",
- "module": "Thingsboard Intergration",
- "name": "iot_customer_user_ver2",
- "naming_rule": "Expression",
- "owner": "Administrator",
- "permissions": [
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "System Manager",
-   "share": 1,
-   "write": 1
-  }
- ],
- "sort_field": "modified",
- "sort_order": "DESC",
- "states": [],
- "track_changes": 1,
- "track_seen": 1,
- "track_views": 1
+  "_comments": "[{\"comment\": \"Action Failed<br><br><pre><code>Traceback (most recent call last):\\n  File \\\"apps/frappe/frappe/mod...\", \"by\": \"Administrator\", \"name\": \"03fb845601\"}, {\"comment\": \"Action Failed<br><br><pre><code>Traceback (most recent call last):\\n  File \\\"apps/frappe/frappe/mod...\", \"by\": \"Administrator\", \"name\": \"b9373f4447\"}]",
+  "actions": [],
+  "allow_rename": 1,
+  "autoname": "format:{user_id}-{iot_customer}",
+  "creation": "2023-04-11 23:24:51.246991",
+  "default_view": "List",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "user_avatar",
+    "email",
+    "full_name",
+    "phone_number",
+    "id_number",
+    "address",
+    "date_join",
+    "date_active",
+    "date_warranty",
+    "user_id",
+    "user_location",
+    "iot_customer"
+  ],
+  "fields": [
+    {
+      "fieldname": "user_avatar",
+      "fieldtype": "Attach Image",
+      "label": "avatar"
+    },
+    {
+      "fieldname": "email",
+      "fieldtype": "Data",
+      "label": "email"
+    },
+    {
+      "fieldname": "full_name",
+      "fieldtype": "Data",
+      "label": "H\u1ecd v\u00e0 t\u00ean"
+    },
+    {
+      "fieldname": "phone_number",
+      "fieldtype": "Data",
+      "label": "S\u1ed1 \u0111i\u1ec7n tho\u1ea1i"
+    },
+    {
+      "fieldname": "id_number",
+      "fieldtype": "Data",
+      "label": "S\u1ed1 cccd/cmnd"
+    },
+    {
+      "fieldname": "address",
+      "fieldtype": "Data",
+      "label": "\u0110\u1ecba ch\u1ec9"
+    },
+    {
+      "fieldname": "date_join",
+      "fieldtype": "Date",
+      "label": "Ng\u00e0y tham gia"
+    },
+    {
+      "fieldname": "date_active",
+      "fieldtype": "Date",
+      "label": "Ng\u00e0y active"
+    },
+    {
+      "fieldname": "date_warranty",
+      "fieldtype": "Date",
+      "label": "Th\u1eddi h\u1ea1n b\u1ea3o h\u00e0nh"
+    },
+    {
+      "fieldname": "user_id",
+      "fieldtype": "Link",
+      "label": "user_id",
+      "options": "User"
+    },
+    {
+      "fieldname": "user_location",
+      "fieldtype": "Geolocation",
+      "label": "V\u1ecb tr\u00ed"
+    },
+    {
+      "fieldname": "iot_customer",
+      "fieldtype": "Link",
+      "label": "Kh\u00e1ch h\u00e0ng c\u1ee7a",
+      "options": "iot_customer"
+    }
+  ],
+  "index_web_pages_for_search": 1,
+  "links": [],
+  "modified": "2023-04-15 17:04:07.505507",
+  "modified_by": "Administrator",
+  "module": "Erpnext Thingsboard Iot",
+  "name": "iot_customer_user_ver2",
+  "naming_rule": "Expression",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "states": [],
+  "track_changes": 1,
+  "track_seen": 1,
+  "track_views": 1
 }

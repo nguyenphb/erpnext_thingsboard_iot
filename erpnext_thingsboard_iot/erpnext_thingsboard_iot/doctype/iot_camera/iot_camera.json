@@ -1,69 +1,69 @@
 {
- "actions": [],
- "allow_rename": 1,
- "creation": "2023-04-18 15:34:03.720507",
- "default_view": "List",
- "doctype": "DocType",
- "editable_grid": 1,
- "engine": "InnoDB",
- "field_order": [
-  "camera_name",
-  "is_connected",
-  "rtsp",
-  "cam_id",
-  "cam_password"
- ],
- "fields": [
-  {
-   "default": "0",
-   "fieldname": "is_connected",
-   "fieldtype": "Check",
-   "label": "K\u1ebft n\u1ed1i camera"
-  },
-  {
-   "fieldname": "rtsp",
-   "fieldtype": "Data",
-   "label": "\u0110\u01b0\u1eddng d\u1eabn rtsp://"
-  },
-  {
-   "fieldname": "cam_id",
-   "fieldtype": "Data",
-   "label": "T\u00ean \u0111\u0103ng nh\u1eadp"
-  },
-  {
-   "fieldname": "cam_password",
-   "fieldtype": "Data",
-   "label": "M\u1eadt kh\u1ea9u"
-  },
-  {
-   "fieldname": "camera_name",
-   "fieldtype": "Data",
-   "label": "Camera name"
-  }
- ],
- "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2023-04-19 14:23:41.085002",
- "modified_by": "Administrator",
- "module": "Thingsboard Intergration",
- "name": "iot_camera",
- "owner": "Administrator",
- "permissions": [
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "System Manager",
-   "share": 1,
-   "write": 1
-  }
- ],
- "sort_field": "modified",
- "sort_order": "DESC",
- "states": [],
- "title_field": "camera_name"
+  "actions": [],
+  "allow_rename": 1,
+  "creation": "2023-04-18 15:34:03.720507",
+  "default_view": "List",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "camera_name",
+    "is_connected",
+    "rtsp",
+    "cam_id",
+    "cam_password"
+  ],
+  "fields": [
+    {
+      "default": "0",
+      "fieldname": "is_connected",
+      "fieldtype": "Check",
+      "label": "K\u1ebft n\u1ed1i camera"
+    },
+    {
+      "fieldname": "rtsp",
+      "fieldtype": "Data",
+      "label": "\u0110\u01b0\u1eddng d\u1eabn rtsp://"
+    },
+    {
+      "fieldname": "cam_id",
+      "fieldtype": "Data",
+      "label": "T\u00ean \u0111\u0103ng nh\u1eadp"
+    },
+    {
+      "fieldname": "cam_password",
+      "fieldtype": "Data",
+      "label": "M\u1eadt kh\u1ea9u"
+    },
+    {
+      "fieldname": "camera_name",
+      "fieldtype": "Data",
+      "label": "Camera name"
+    }
+  ],
+  "index_web_pages_for_search": 1,
+  "links": [],
+  "modified": "2023-04-19 14:23:41.085002",
+  "modified_by": "Administrator",
+  "module": "Erpnext Thingsboard Iot",
+  "name": "iot_camera",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "states": [],
+  "title_field": "camera_name"
 }

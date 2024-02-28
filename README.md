@@ -1,4 +1,4 @@
-## Thingsboard Intergration
+## Erpnext Thingsboard Iot
 
 Thingsboard integration for ERPNext
 

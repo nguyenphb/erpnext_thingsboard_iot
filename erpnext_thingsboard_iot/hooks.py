@@ -1,7 +1,7 @@
 from . import __version__ as app_version
 
 app_name = "erpnext_thingsboard_iot"
-app_title = "Thingsboard Intergration"
+app_title = "Erpnext Thingsboard Iot"
 app_publisher = "VIIS IoT Solution"
 app_description = "Thingsboard integration for ERPNext"
 app_email = "baonguyen2409@gmail.com"

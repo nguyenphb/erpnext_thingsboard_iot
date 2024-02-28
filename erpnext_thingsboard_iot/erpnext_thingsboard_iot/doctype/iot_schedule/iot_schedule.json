@@ -1,95 +1,95 @@
 {
- "actions": [],
- "allow_rename": 1,
- "creation": "2023-04-18 15:40:07.710264",
- "default_view": "List",
- "doctype": "DocType",
- "editable_grid": 1,
- "engine": "InnoDB",
- "field_order": [
-  "device_id",
-  "action",
-  "enable",
-  "schedule_name",
-  "interval",
-  "time",
-  "start_date",
-  "end_date",
-  "type"
- ],
- "fields": [
-  {
-   "fieldname": "device_id",
-   "fieldtype": "Link",
-   "label": "Device id",
-   "options": "iot_device"
-  },
-  {
-   "fieldname": "action",
-   "fieldtype": "Data",
-   "label": "Action"
-  },
-  {
-   "default": "0",
-   "fieldname": "enable",
-   "fieldtype": "Check",
-   "label": "Enable"
-  },
-  {
-   "fieldname": "schedule_name",
-   "fieldtype": "Data",
-   "label": "schedule name"
-  },
-  {
-   "fieldname": "interval",
-   "fieldtype": "Data",
-   "label": "interval"
-  },
-  {
-   "fieldname": "time",
-   "fieldtype": "Time",
-   "label": "time"
-  },
-  {
-   "fieldname": "start_date",
-   "fieldtype": "Date",
-   "label": "start_date"
-  },
-  {
-   "fieldname": "end_date",
-   "fieldtype": "Date",
-   "label": "end_date"
-  },
-  {
-   "fieldname": "type",
-   "fieldtype": "Select",
-   "label": "type",
-   "options": "\ninterval\nperiod\nfixed"
-  }
- ],
- "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2023-04-19 14:15:58.280068",
- "modified_by": "Administrator",
- "module": "Thingsboard Intergration",
- "name": "iot_schedule",
- "owner": "Administrator",
- "permissions": [
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "System Manager",
-   "share": 1,
-   "write": 1
-  }
- ],
- "sort_field": "modified",
- "sort_order": "DESC",
- "states": [],
- "title_field": "schedule_name"
+  "actions": [],
+  "allow_rename": 1,
+  "creation": "2023-04-18 15:40:07.710264",
+  "default_view": "List",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "device_id",
+    "action",
+    "enable",
+    "schedule_name",
+    "interval",
+    "time",
+    "start_date",
+    "end_date",
+    "type"
+  ],
+  "fields": [
+    {
+      "fieldname": "device_id",
+      "fieldtype": "Link",
+      "label": "Device id",
+      "options": "iot_device"
+    },
+    {
+      "fieldname": "action",
+      "fieldtype": "Data",
+      "label": "Action"
+    },
+    {
+      "default": "0",
+      "fieldname": "enable",
+      "fieldtype": "Check",
+      "label": "Enable"
+    },
+    {
+      "fieldname": "schedule_name",
+      "fieldtype": "Data",
+      "label": "schedule name"
+    },
+    {
+      "fieldname": "interval",
+      "fieldtype": "Data",
+      "label": "interval"
+    },
+    {
+      "fieldname": "time",
+      "fieldtype": "Time",
+      "label": "time"
+    },
+    {
+      "fieldname": "start_date",
+      "fieldtype": "Date",
+      "label": "start_date"
+    },
+    {
+      "fieldname": "end_date",
+      "fieldtype": "Date",
+      "label": "end_date"
+    },
+    {
+      "fieldname": "type",
+      "fieldtype": "Select",
+      "label": "type",
+      "options": "\ninterval\nperiod\nfixed"
+    }
+  ],
+  "index_web_pages_for_search": 1,
+  "links": [],
+  "modified": "2023-04-19 14:15:58.280068",
+  "modified_by": "Administrator",
+  "module": "Erpnext Thingsboard Iot",
+  "name": "iot_schedule",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "states": [],
+  "title_field": "schedule_name"
 }
