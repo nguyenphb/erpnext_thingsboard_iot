@@ -1,0 +1,102 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:device_id",
+ "creation": "2024-06-23 14:59:46.903223",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "inc_start_time",
+  "inc_end_time",
+  "device_id",
+  "des_start_time",
+  "des_end_time",
+  "interval",
+  "inc_number",
+  "des_number",
+  "inc_enable",
+  "des_enable"
+ ],
+ "fields": [
+  {
+   "fieldname": "inc_start_time",
+   "fieldtype": "Datetime",
+   "label": "inc_start_time"
+  },
+  {
+   "fieldname": "inc_end_time",
+   "fieldtype": "Datetime",
+   "label": "inc_end_time"
+  },
+  {
+   "fieldname": "device_id",
+   "fieldtype": "Data",
+   "label": "device_id",
+   "unique": 1
+  },
+  {
+   "fieldname": "interval",
+   "fieldtype": "Int",
+   "label": "interval"
+  },
+  {
+   "fieldname": "inc_number",
+   "fieldtype": "Int",
+   "label": "inc_number"
+  },
+  {
+   "fieldname": "des_number",
+   "fieldtype": "Int",
+   "label": "des_number"
+  },
+  {
+   "default": "0",
+   "fieldname": "inc_enable",
+   "fieldtype": "Check",
+   "label": "inc_enable"
+  },
+  {
+   "default": "0",
+   "fieldname": "des_enable",
+   "fieldtype": "Check",
+   "label": "des_enable"
+  },
+  {
+   "fieldname": "des_start_time",
+   "fieldtype": "Datetime",
+   "label": "desc_start_time"
+  },
+  {
+   "fieldname": "des_end_time",
+   "fieldtype": "Datetime",
+   "label": "desc_end_time"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-23 15:23:04.384048",
+ "modified_by": "Administrator",
+ "module": "Erpnext Thingsboard Iot",
+ "name": "iot_advanced_setting",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

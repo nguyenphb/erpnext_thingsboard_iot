@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2024-05-26 23:37:52.063483",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "time",
+  "x",
+  "y",
+  "lat",
+  "lon",
+  "device_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "time",
+   "fieldtype": "Int",
+   "label": "time"
+  },
+  {
+   "fieldname": "x",
+   "fieldtype": "Int",
+   "label": "x"
+  },
+  {
+   "fieldname": "y",
+   "fieldtype": "Int",
+   "label": "y"
+  },
+  {
+   "fieldname": "lat",
+   "fieldtype": "Data",
+   "label": "lat"
+  },
+  {
+   "fieldname": "lon",
+   "fieldtype": "Data",
+   "label": "lon"
+  },
+  {
+   "fieldname": "device_id",
+   "fieldtype": "Link",
+   "label": "device_id",
+   "options": "iot_device"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-27 16:35:08.950899",
+ "modified_by": "Administrator",
+ "module": "Erpnext Thingsboard Iot",
+ "name": "iot_demo_setting",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
