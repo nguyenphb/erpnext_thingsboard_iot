@@ -1,153 +1,153 @@
 {
-  "actions": [],
-  "allow_import": 1,
-  "allow_rename": 1,
-  "autoname": "field:id",
-  "creation": "2023-02-05 23:37:09.168850",
-  "default_view": "List",
-  "doctype": "DocType",
-  "editable_grid": 1,
-  "engine": "InnoDB",
-  "field_order": [
-    "id",
-    "project_name",
-    "customer_id",
-    "label",
-    "img_url",
-    "start_date",
-    "end_date",
-    "end_warranty_date",
-    "column_break_9",
-    "area",
-    "country",
-    "city",
-    "province",
-    "address",
-    "longitude",
-    "latitude",
-    "section_break_17",
-    "location"
-  ],
-  "fields": [
-    {
-      "fieldname": "id",
-      "fieldtype": "Data",
-      "label": "m\u00e3 d\u1ef1 \u00e1n",
-      "unique": 1
-    },
-    {
-      "fieldname": "project_name",
-      "fieldtype": "Data",
-      "in_list_view": 1,
-      "label": "T\u00ean d\u1ef1 \u00e1n",
-      "reqd": 1,
-      "unique": 1
-    },
-    {
-      "fieldname": "customer_id",
-      "fieldtype": "Link",
-      "label": "Kh\u00e1ch h\u00e0ng",
-      "options": "iot_customer_user_ver2"
-    },
-    {
-      "fieldname": "label",
-      "fieldtype": "Data",
-      "label": "Nh\u00e3n"
-    },
-    {
-      "fieldname": "img_url",
-      "fieldtype": "Attach Image",
-      "label": "H\u00ecnh \u1ea3nh"
-    },
-    {
-      "fieldname": "location",
-      "fieldtype": "Geolocation",
-      "label": "v\u1ecb tr\u00ed"
-    },
-    {
-      "fieldname": "start_date",
-      "fieldtype": "Date",
-      "label": "Th\u1eddi gian b\u1eaft \u0111\u1ea7u"
-    },
-    {
-      "fieldname": "end_date",
-      "fieldtype": "Date",
-      "label": "Th\u1eddi gian k\u1ebft th\u00fac"
-    },
-    {
-      "fieldname": "end_warranty_date",
-      "fieldtype": "Date",
-      "label": "Th\u1eddi gian k\u1ebft th\u00fac b\u1ea3o h\u00e0nh"
-    },
-    {
-      "fieldname": "latitude",
-      "fieldtype": "Data",
-      "label": "Latitude"
-    },
-    {
-      "fieldname": "longitude",
-      "fieldtype": "Data",
-      "label": "Longitude"
-    },
-    {
-      "fieldname": "area",
-      "fieldtype": "Data",
-      "label": "Area"
-    },
-    {
-      "fieldname": "column_break_9",
-      "fieldtype": "Column Break"
-    },
-    {
-      "fieldname": "country",
-      "fieldtype": "Data",
-      "label": "Country"
-    },
-    {
-      "fieldname": "city",
-      "fieldtype": "Data",
-      "label": "City"
-    },
-    {
-      "fieldname": "province",
-      "fieldtype": "Data",
-      "label": "State/ Province"
-    },
-    {
-      "fieldname": "address",
-      "fieldtype": "Data",
-      "label": "\u0110\u1ecba ch\u1ec9"
-    },
-    {
-      "fieldname": "section_break_17",
-      "fieldtype": "Section Break"
-    }
-  ],
-  "image_field": "img_url",
-  "index_web_pages_for_search": 1,
-  "links": [],
-  "modified": "2023-04-19 14:24:10.828337",
-  "modified_by": "Administrator",
-  "module": "Erpnext Thingsboard Iot",
-  "name": "iot_project",
-  "naming_rule": "By fieldname",
-  "owner": "Administrator",
-  "permissions": [
-    {
-      "create": 1,
-      "delete": 1,
-      "email": 1,
-      "export": 1,
-      "print": 1,
-      "read": 1,
-      "report": 1,
-      "role": "System Manager",
-      "share": 1,
-      "write": 1
-    }
-  ],
-  "sort_field": "modified",
-  "sort_order": "DESC",
-  "states": [],
-  "title_field": "project_name"
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2023-02-05 23:37:09.168850",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "id",
+  "project_name",
+  "customer_id",
+  "label",
+  "img_url",
+  "start_date",
+  "end_date",
+  "end_warranty_date",
+  "column_break_9",
+  "area",
+  "ward",
+  "district",
+  "province",
+  "address",
+  "longitude",
+  "latitude",
+  "section_break_17",
+  "location"
+ ],
+ "fields": [
+  {
+   "fieldname": "id",
+   "fieldtype": "Data",
+   "label": "m\u00e3 d\u1ef1 \u00e1n",
+   "unique": 1
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "T\u00ean d\u1ef1 \u00e1n",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Link",
+   "label": "Kh\u00e1ch h\u00e0ng",
+   "options": "iot_customer"
+  },
+  {
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "label": "Nh\u00e3n"
+  },
+  {
+   "fieldname": "img_url",
+   "fieldtype": "Attach Image",
+   "label": "H\u00ecnh \u1ea3nh"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Geolocation",
+   "label": "v\u1ecb tr\u00ed"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Th\u1eddi gian b\u1eaft \u0111\u1ea7u"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "Th\u1eddi gian k\u1ebft th\u00fac"
+  },
+  {
+   "fieldname": "end_warranty_date",
+   "fieldtype": "Date",
+   "label": "Th\u1eddi gian k\u1ebft th\u00fac b\u1ea3o h\u00e0nh"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "label": "Latitude"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "label": "Longitude"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "label": "Area"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "province",
+   "fieldtype": "Data",
+   "label": "State/ Province"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "\u0110\u1ecba ch\u1ec9"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ward",
+   "fieldtype": "Data",
+   "label": "Ward"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District"
+  }
+ ],
+ "image_field": "img_url",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-01 16:20:37.741485",
+ "modified_by": "Administrator",
+ "module": "Erpnext Thingsboard Iot",
+ "name": "iot_project",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "project_name"
 }

@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:customer_id",
+ "creation": "2024-07-13 17:17:06.916647",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_id",
+  "emails",
+  "enable",
+  "emails_cc",
+  "emails_bcc",
+  "username",
+  "password"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Link",
+   "label": "customer_id",
+   "options": "iot_customer",
+   "unique": 1
+  },
+  {
+   "fieldname": "emails",
+   "fieldtype": "Small Text",
+   "label": "emails"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable",
+   "fieldtype": "Check",
+   "label": "enable"
+  },
+  {
+   "fieldname": "emails_cc",
+   "fieldtype": "Small Text",
+   "label": "emails_cc"
+  },
+  {
+   "fieldname": "emails_bcc",
+   "fieldtype": "Small Text",
+   "label": "emails_bcca"
+  },
+  {
+   "fieldname": "username",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "username",
+   "reqd": 1
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "password",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-13 20:50:46.223931",
+ "modified_by": "Administrator",
+ "module": "Erpnext Thingsboard Iot",
+ "name": "email_alarm_config",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

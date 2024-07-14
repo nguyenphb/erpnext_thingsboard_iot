@@ -1,0 +1,151 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:device_id",
+ "creation": "2024-05-07 07:54:37.305624",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "device_id",
+  "tempset",
+  "humidset",
+  "temp_min",
+  "temp_max",
+  "humid_max",
+  "humid_min",
+  "temp_fake",
+  "humid_fake",
+  "interval",
+  "temp_fake_min",
+  "temp_fake_max",
+  "humid_fake_min",
+  "humid_fake_max",
+  "temp_view",
+  "humid_view",
+  "temp_view_enable",
+  "humid_view_enable"
+ ],
+ "fields": [
+  {
+   "fieldname": "device_id",
+   "fieldtype": "Link",
+   "label": "device_id",
+   "options": "iot_device",
+   "unique": 1
+  },
+  {
+   "fieldname": "tempset",
+   "fieldtype": "Float",
+   "label": "temp"
+  },
+  {
+   "fieldname": "humidset",
+   "fieldtype": "Float",
+   "label": "humid"
+  },
+  {
+   "fieldname": "temp_min",
+   "fieldtype": "Float",
+   "label": "temp_min"
+  },
+  {
+   "fieldname": "temp_max",
+   "fieldtype": "Float",
+   "label": "temp_max"
+  },
+  {
+   "fieldname": "humid_max",
+   "fieldtype": "Float",
+   "label": "humid_min"
+  },
+  {
+   "fieldname": "humid_min",
+   "fieldtype": "Float",
+   "label": "humid_max"
+  },
+  {
+   "fieldname": "temp_fake",
+   "fieldtype": "Float",
+   "label": "temp_fake"
+  },
+  {
+   "fieldname": "humid_fake",
+   "fieldtype": "Float",
+   "label": "humid_fake"
+  },
+  {
+   "fieldname": "interval",
+   "fieldtype": "Int",
+   "label": "interval"
+  },
+  {
+   "fieldname": "temp_fake_min",
+   "fieldtype": "Float",
+   "label": "temp_fake_min"
+  },
+  {
+   "fieldname": "temp_fake_max",
+   "fieldtype": "Float",
+   "label": "temp_fake_max"
+  },
+  {
+   "fieldname": "humid_fake_min",
+   "fieldtype": "Float",
+   "label": "humid_fake_min"
+  },
+  {
+   "fieldname": "humid_fake_max",
+   "fieldtype": "Float",
+   "label": "humid_fake_max"
+  },
+  {
+   "fieldname": "temp_view",
+   "fieldtype": "Float",
+   "label": "temp_view"
+  },
+  {
+   "fieldname": "humid_view",
+   "fieldtype": "Float",
+   "label": "humid_view"
+  },
+  {
+   "default": "0",
+   "fieldname": "temp_view_enable",
+   "fieldtype": "Check",
+   "label": "temp_view_enable"
+  },
+  {
+   "default": "0",
+   "fieldname": "humid_view_enable",
+   "fieldtype": "Check",
+   "label": "humid_view_enable"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-12 22:50:55.203050",
+ "modified_by": "Administrator",
+ "module": "Erpnext Thingsboard Iot",
+ "name": "iot_coolchain_setting",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

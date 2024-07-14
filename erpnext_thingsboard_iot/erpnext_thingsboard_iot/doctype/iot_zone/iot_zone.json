@@ -1,120 +1,138 @@
 {
-  "actions": [],
-  "allow_import": 1,
-  "allow_rename": 1,
-  "creation": "2023-02-07 15:45:19.477733",
-  "default_view": "List",
-  "doctype": "DocType",
-  "editable_grid": 1,
-  "engine": "InnoDB",
-  "field_order": [
-    "zone_id",
-    "project_id",
-    "zone_image",
-    "zone_name",
-    "zone_label",
-    "location",
-    "latitude",
-    "longitude",
-    "country",
-    "city",
-    "province",
-    "address",
-    "customer_id"
-  ],
-  "fields": [
-    {
-      "fieldname": "zone_id",
-      "fieldtype": "Data",
-      "label": "M\u00e3 khu v\u1ef1c"
-    },
-    {
-      "fieldname": "project_id",
-      "fieldtype": "Link",
-      "label": "M\u00e3 d\u1ef1 \u00e1n",
-      "options": "iot_project"
-    },
-    {
-      "fieldname": "zone_image",
-      "fieldtype": "Attach Image",
-      "label": "H\u00ecnh \u1ea3nh"
-    },
-    {
-      "fieldname": "zone_name",
-      "fieldtype": "Data",
-      "label": "T\u00ean khu v\u1ef1c"
-    },
-    {
-      "fieldname": "zone_label",
-      "fieldtype": "Data",
-      "label": "Nh\u00e3n hi\u1ec3n th\u1ecb"
-    },
-    {
-      "fieldname": "location",
-      "fieldtype": "Data",
-      "label": "V\u1ecb tr\u00ed"
-    },
-    {
-      "fieldname": "latitude",
-      "fieldtype": "Data",
-      "label": "Latitude"
-    },
-    {
-      "fieldname": "longitude",
-      "fieldtype": "Data",
-      "label": "Longitude"
-    },
-    {
-      "fieldname": "country",
-      "fieldtype": "Data",
-      "label": "Country"
-    },
-    {
-      "fieldname": "city",
-      "fieldtype": "Data",
-      "label": "City"
-    },
-    {
-      "fieldname": "province",
-      "fieldtype": "Data",
-      "label": "State/ Province"
-    },
-    {
-      "fieldname": "address",
-      "fieldtype": "Data",
-      "label": "\u0110\u1ecba ch\u1ec9"
-    },
-    {
-      "fieldname": "customer_id",
-      "fieldtype": "Link",
-      "label": "Kh\u00e1ch h\u00e0ng",
-      "options": "iot_customer_user_ver2"
-    }
-  ],
-  "image_field": "zone_image",
-  "index_web_pages_for_search": 1,
-  "links": [],
-  "modified": "2023-04-19 14:23:56.311247",
-  "modified_by": "Administrator",
-  "module": "Erpnext Thingsboard Iot",
-  "name": "iot_zone",
-  "owner": "Administrator",
-  "permissions": [
-    {
-      "create": 1,
-      "delete": 1,
-      "email": 1,
-      "export": 1,
-      "print": 1,
-      "read": 1,
-      "report": 1,
-      "role": "System Manager",
-      "share": 1,
-      "write": 1
-    }
-  ],
-  "sort_field": "modified",
-  "sort_order": "DESC",
-  "states": [],
-  "title_field": "zone_name"
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2023-02-07 15:45:19.477733",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "zone_id",
+  "project_id",
+  "zone_image",
+  "zone_name",
+  "zone_label",
+  "location",
+  "latitude",
+  "longitude",
+  "country",
+  "city",
+  "province",
+  "address",
+  "customer_id",
+  "label",
+  "district",
+  "ward"
+ ],
+ "fields": [
+  {
+   "fieldname": "zone_id",
+   "fieldtype": "Data",
+   "label": "M\u00e3 khu v\u1ef1c"
+  },
+  {
+   "fieldname": "project_id",
+   "fieldtype": "Link",
+   "label": "M\u00e3 d\u1ef1 \u00e1n",
+   "options": "iot_project"
+  },
+  {
+   "fieldname": "zone_image",
+   "fieldtype": "Attach Image",
+   "label": "H\u00ecnh \u1ea3nh"
+  },
+  {
+   "fieldname": "zone_name",
+   "fieldtype": "Data",
+   "label": "T\u00ean khu v\u1ef1c"
+  },
+  {
+   "fieldname": "zone_label",
+   "fieldtype": "Data",
+   "label": "Nh\u00e3n hi\u1ec3n th\u1ecb"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "V\u1ecb tr\u00ed"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "label": "Latitude"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "label": "Longitude"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "province",
+   "fieldtype": "Data",
+   "label": "State/ Province"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "\u0110\u1ecba ch\u1ec9"
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Link",
+   "label": "Kh\u00e1ch h\u00e0ng",
+   "options": "iot_customer"
+  },
+  {
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "label": "Label"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District"
+  },
+  {
+   "fieldname": "ward",
+   "fieldtype": "Data",
+   "label": "Ward"
+  }
+ ],
+ "image_field": "zone_image",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-11 10:52:44.632110",
+ "modified_by": "Administrator",
+ "module": "Erpnext Thingsboard Iot",
+ "name": "iot_zone",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "zone_name"
 }
