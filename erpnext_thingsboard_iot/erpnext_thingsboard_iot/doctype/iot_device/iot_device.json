@@ -1,118 +1,118 @@
 {
- "actions": [],
- "allow_import": 1,
- "allow_rename": 1,
- "autoname": "field:id",
- "creation": "2023-02-07 16:19:52.359328",
- "default_view": "List",
- "doctype": "DocType",
- "editable_grid": 1,
- "engine": "InnoDB",
- "field_order": [
-  "device_id_thingsboard",
-  "device_name",
-  "device_profile_id",
-  "access_token_thingsboard",
-  "zone_id",
-  "id",
-  "description",
-  "customer_id",
-  "create_time",
-  "label",
-  "image",
-  "sort_index"
- ],
- "fields": [
-  {
-   "fieldname": "device_name",
-   "fieldtype": "Data",
-   "label": "T\u00ean thi\u1ebft b\u1ecb"
-  },
-  {
-   "fieldname": "device_profile_id",
-   "fieldtype": "Link",
-   "label": "Ki\u1ec3u lo\u1ea1i thi\u1ebft b\u1ecb",
-   "options": "iot_device_profile"
-  },
-  {
-   "fieldname": "zone_id",
-   "fieldtype": "Link",
-   "label": "M\u00e3 khu v\u1ef1c",
-   "options": "iot_zone"
-  },
-  {
-   "fieldname": "description",
-   "fieldtype": "Small Text",
-   "label": "M\u00f4 t\u1ea3"
-  },
-  {
-   "fieldname": "customer_id",
-   "fieldtype": "Link",
-   "label": "Kh\u00e1ch h\u00e0ng",
-   "options": "iot_customer"
-  },
-  {
-   "fieldname": "device_id_thingsboard",
-   "fieldtype": "Data",
-   "label": "M\u00e3 thi\u1ebft b\u1ecb",
-   "unique": 1
-  },
-  {
-   "fieldname": "access_token_thingsboard",
-   "fieldtype": "Data",
-   "label": "access_token_thingsboard"
-  },
-  {
-   "fieldname": "id",
-   "fieldtype": "Data",
-   "label": "id",
-   "unique": 1
-  },
-  {
-   "fieldname": "create_time",
-   "fieldtype": "Data",
-   "label": "create_time"
-  },
-  {
-   "fieldname": "label",
-   "fieldtype": "Data",
-   "label": "T\u00ean thi\u1ebft b\u1ecb"
-  },
-  {
-   "fieldname": "image",
-   "fieldtype": "Data",
-   "label": "H\u00ecnh \u1ea3nh"
-  },
-  {
-   "fieldname": "sort_index",
-   "fieldtype": "Int",
-   "label": "Sort"
-  }
- ],
- "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2024-07-02 10:03:26.947110",
- "modified_by": "Administrator",
- "module": "Erpnext Thingsboard Iot",
- "name": "iot_device",
- "naming_rule": "By fieldname",
- "owner": "Administrator",
- "permissions": [
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "System Manager",
-   "share": 1,
-   "write": 1
-  }
- ],
- "sort_field": "modified",
- "sort_order": "DESC",
- "states": [],
- "title_field": "device_name"
+  "actions": [],
+  "allow_import": 1,
+  "allow_rename": 1,
+  "autoname": "field:id",
+  "creation": "2023-02-07 16:19:52.359328",
+  "default_view": "List",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "device_id_thingsboard",
+    "device_name",
+    "device_profile_id",
+    "access_token_thingsboard",
+    "zone_id",
+    "id",
+    "description",
+    "customer_id",
+    "create_time",
+    "label",
+    "image",
+    "sort_index"
+  ],
+  "fields": [
+    {
+      "fieldname": "device_name",
+      "fieldtype": "Data",
+      "label": "T\u00ean thi\u1ebft b\u1ecb"
+    },
+    {
+      "fieldname": "device_profile_id",
+      "fieldtype": "Link",
+      "label": "Ki\u1ec3u lo\u1ea1i thi\u1ebft b\u1ecb",
+      "options": "iot_device_profile"
+    },
+    {
+      "fieldname": "zone_id",
+      "fieldtype": "Link",
+      "label": "M\u00e3 khu v\u1ef1c",
+      "options": "iot_zone"
+    },
+    {
+      "fieldname": "description",
+      "fieldtype": "Small Text",
+      "label": "M\u00f4 t\u1ea3"
+    },
+    {
+      "fieldname": "customer_id",
+      "fieldtype": "Link",
+      "label": "Kh\u00e1ch h\u00e0ng",
+      "options": "iot_customer"
+    },
+    {
+      "fieldname": "device_id_thingsboard",
+      "fieldtype": "Data",
+      "label": "M\u00e3 thi\u1ebft b\u1ecb",
+      "unique": 1
+    },
+    {
+      "fieldname": "access_token_thingsboard",
+      "fieldtype": "Data",
+      "label": "access_token_thingsboard"
+    },
+    {
+      "fieldname": "id",
+      "fieldtype": "Data",
+      "label": "id",
+      "unique": 1
+    },
+    {
+      "fieldname": "create_time",
+      "fieldtype": "Data",
+      "label": "create_time"
+    },
+    {
+      "fieldname": "label",
+      "fieldtype": "Data",
+      "label": "T\u00ean thi\u1ebft b\u1ecb"
+    },
+    {
+      "fieldname": "image",
+      "fieldtype": "Data",
+      "label": "H\u00ecnh \u1ea3nh"
+    },
+    {
+      "fieldname": "sort_index",
+      "fieldtype": "Int",
+      "label": "Sort"
+    }
+  ],
+  "index_web_pages_for_search": 1,
+  "links": [],
+  "modified": "2024-07-02 10:03:26.947110",
+  "modified_by": "Administrator",
+  "module": "Erpnext Thingsboard Iot",
+  "name": "iot_device",
+  "naming_rule": "By fieldname",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "states": [],
+  "title_field": "device_name"
 }
